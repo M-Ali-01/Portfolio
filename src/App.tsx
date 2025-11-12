@@ -166,15 +166,15 @@ const projects = [
 const experienceData = [
   {
     id: 1,
-    role: 'Odoo Developer',
+    role: 'Odoo Functional Consultant',
     period: 'August 2024 – Present',
     company: 'Business Solutions & Services',
     achievements: [
-      { icon: Code2, text: 'Developing, customizing, and enhancing Odoo modules.' },
-      { icon: GitBranch, text: 'Working on portals using controller APIs for seamless workflows.' },
-      { icon: GitMerge, text: 'Migrated modules to newer versions while optimizing performance.' },
-      { icon: Database, text: 'Developed advanced QWeb PDF and Excel reports.' },
-      { icon: FileJson, text: 'Collaborated with team leads to deliver high-quality solutions.' },
+      { icon: Code2, text: 'Analyzing business requirements and configuring Odoo modules to meet client needs.' },
+      { icon: GitBranch, text: 'Customizing workflows and business processes for optimal operational efficiency.' },
+      { icon: GitMerge, text: 'Implementing and deploying Odoo solutions across various industries.' },
+      { icon: Database, text: 'Creating comprehensive reports and dashboards for business intelligence.' },
+      { icon: FileJson, text: 'Collaborating with teams to ensure successful system adoption and training.' },
     ],
     techStack: ['Odoo', 'Python', 'PostgreSQL', 'XML'],
   },
@@ -265,7 +265,7 @@ function App() {
   // Download CV function
   const downloadCV = () => {
     const cvData = localStorage.getItem('uploadedCV');
-    const fileName = localStorage.getItem('cvFileName') || 'Ahsan_CV.pdf';
+    const fileName = localStorage.getItem('cvFileName') || 'Ali_Zahid_CV.pdf';
     const fileType = localStorage.getItem('cvFileType') || 'application/pdf';
 
     if (cvData) {
@@ -277,38 +277,39 @@ function App() {
       link.click();
       document.body.removeChild(link);
     } else {
-      // Fallback - create a sample CV
       const sampleCV = `
-        AHSAN ISMAIL
-        Python Developer | OdooERP | Problem Solver
-        
+        M ALI ZAHID
+        Odoo Functional Consultant
+
         Contact:
         Phone: 03180690159
-        Email: ahsan.ismail0159@gmail.com
+        Email: ali.zahid@example.com
         GitHub: https://github.com/M-Ahsan-Ismail
-        LinkedIn: https://www.linkedin.com/in/ahsan-ismail-4b4763281/
-        
+        LinkedIn: https://www.linkedin.com/in/ali-zahid/
+
         Experience:
-        Odoo Developer (August 2024 – Present)
-        - Assisted in developing, customizing, and enhancing Odoo modules
-        - Integrated APIs into Odoo for seamless workflows
-        - Migrated modules to newer versions while optimizing performance
-        
+        Odoo Functional Consultant (August 2024 – Present)
+        - Analyzing business requirements and configuring Odoo modules
+        - Customizing workflows and business processes for operational efficiency
+        - Implementing and deploying Odoo solutions across various industries
+        - Creating comprehensive reports and dashboards for business intelligence
+        - Collaborating with teams on system adoption and training
+
         Skills:
-        - Python (75%)
-        - Object-Oriented Programming (85%)
-        - Data Structures (80%)
-        - Odoo OpenERP (75%)
-        - XML (90%)
-        - HTML/CSS (90%)
+        - Odoo ERP (90%)
+        - Business Process Analysis (85%)
+        - System Configuration (85%)
+        - Python (80%)
         - PostgreSQL (80%)
+        - XML (85%)
+        - HTML/CSS (85%)
       `;
       
       const blob = new Blob([sampleCV], { type: 'text/plain' });
       const url = URL.createObjectURL(blob);
       const link = document.createElement('a');
       link.href = url;
-      link.download = 'Ahsan_CV.txt';
+      link.download = 'Ali_Zahid_CV.txt';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -349,26 +350,34 @@ function App() {
             >
               <motion.span
                 className="inline-block"
-                style={{ color: '#F5F5F5' }} // Bright off-white color
-                animate={{ y: [0, -20, 0] }} // Keep the bounce animation
+                style={{ color: '#F5F5F5' }}
+                animate={{ y: [0, -20, 0] }}
                 transition={{ duration: 2, repeat: Infinity, repeatType: 'reverse' }}
               >
-                Ahsan
+                M
               </motion.span>{' '}
               <motion.span
                 className="inline-block"
-                style={{ color: '#F5F5F5' }} // Bright off-white color
-                animate={{ y: [0, -20, 0] }} // Keep the bounce animation
+                style={{ color: '#F5F5F5' }}
+                animate={{ y: [0, -20, 0] }}
+                transition={{ duration: 2, repeat: Infinity, repeatType: 'reverse', delay: 0.1 }}
+              >
+                Ali
+              </motion.span>{' '}
+              <motion.span
+                className="inline-block"
+                style={{ color: '#F5F5F5' }}
+                animate={{ y: [0, -20, 0] }}
                 transition={{ duration: 2, repeat: Infinity, repeatType: 'reverse', delay: 0.2 }}
               >
-                Ismail
+                Zahid
               </motion.span>
             </motion.h1>
             <motion.h2
               className="text-xl sm:text-2xl md:text-3xl text-bright-off-white"
               variants={itemVariants}
             >
-              Python Developer | OdooERP | Problem Solver
+              Odoo Functional Consultant
             </motion.h2>
           </motion.div>
         </motion.div>
@@ -549,9 +558,9 @@ function App() {
           >
             {[
               { icon: Phone, href: 'tel:03180690159', text: '03180690159' },
-              { icon: Mail, href: 'mailto:ahsan.ismail0159@gmail.com', text: 'ahsan.ismail0159@gmail.com' },
+              { icon: Mail, href: 'mailto:ali.zahid@example.com', text: 'ali.zahid@example.com' },
               { icon: Github, href: 'https://github.com/M-Ahsan-Ismail', text: 'GitHub' },
-              { icon: Linkedin, href: 'https://www.linkedin.com/in/ahsan-ismail-4b4763281/', text: 'LinkedIn' },
+              { icon: Linkedin, href: 'https://www.linkedin.com/in/ali-zahid/', text: 'LinkedIn' },
             ].map(({ icon: Icon, href, text }) => (
               <motion.a
                 key={href}
