@@ -302,14 +302,14 @@ export default function ModernSkillsSection() {
   });
 
   const skills = [
-     { "name": "Python", "percentage": 80, "category": "Programming Language", "icon": "🐍" },
-  { "name": "OdooERP", "percentage": 90, "category": "ERP Framework", "icon": "🏢" },
-  { "name": "Rest Apis", "percentage": 90, "category": "API", "icon": "🔌" },
-  { "name": "Object Oriented Programming", "percentage": 85, "category": "Paradigm", "icon": "🧩" },
-  { "name": "Data Structures", "percentage": 80, "category": "Engineering", "icon": "🌳" },
-  { "name": "PostgreSQL", "percentage": 75, "category": "Database", "icon": "🗃️" },
-  { "name": "QWeb", "percentage": 90, "category": "Templating Engine", "icon": "📄" },
-  { "name": "XML/HTML/CSS", "percentage": 80, "category": "Web Technologies", "icon": "🌐" }
+     { "name": "Odoo ERP", "percentage": 95, "category": "ERP System", "icon": "🏢" },
+  { "name": "Business Process Analysis", "percentage": 90, "category": "Consulting", "icon": "📊" },
+  { "name": "System Configuration", "percentage": 92, "category": "Implementation", "icon": "⚙️" },
+  { "name": "Module Implementation", "percentage": 90, "category": "Functional", "icon": "🔧" },
+  { "name": "Workflow Customization", "percentage": 88, "category": "Configuration", "icon": "🔄" },
+  { "name": "Report Design", "percentage": 85, "category": "Analytics", "icon": "📈" },
+  { "name": "Python Scripting", "percentage": 80, "category": "Programming", "icon": "🐍" },
+  { "name": "Data Migration", "percentage": 85, "category": "Technical", "icon": "💾" }
   ];
 
   return (
@@ -376,8 +376,8 @@ export default function ModernSkillsSection() {
           animate={sectionInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Crafting digital experiences with cutting-edge technologies and proven methodologies. 
-          Each skill represents countless hours of dedication and real-world application.
+          Delivering comprehensive Odoo solutions through expert functional consulting.
+          Specialized in business process optimization, system implementation, and enterprise solutions.
         </motion.p>
       </div>
 
@@ -403,10 +403,10 @@ export default function ModernSkillsSection() {
         transition={{ duration: 0.8, delay: 0.8 }}
       >
         {[
-          { label: 'Technologies', value: '8+' }, 
-          { label: 'Years Experience', value: '1' },
-          { label: 'Projects Completed', value: '5+' },
-          { label: 'Average Proficiency', value: '85%' }
+          { label: 'Core Skills', value: '8+' },
+          { label: 'Implementations', value: '22+' },
+          { label: 'Industries', value: '10+' },
+          { label: 'Expertise Level', value: '90%' }
         ].map((stat, index) => (
           <motion.div
             key={stat.label}
