@@ -282,10 +282,10 @@ function App() {
         Odoo Functional Consultant
 
         Contact:
-        Phone: 03180690159
-        Email: ali.zahid@example.com
-        GitHub: https://github.com/M-Ahsan-Ismail
-        LinkedIn: https://www.linkedin.com/in/ali-zahid/
+        Phone: 03391681608
+        Email: mohammadalizahid.bss@gmail.com
+        GitHub: https://github.com/M-Ali-01
+        LinkedIn: https://www.linkedin.com/in/mohammad-ali-zahid-%F0%9F%92%8E-649b1b278/
 
         Experience:
         Odoo Functional Consultant (August 2024 – Present)
@@ -557,10 +557,10 @@ function App() {
             whileInView="visible"
           >
             {[
-              { icon: Phone, href: 'tel:03180690159', text: '03180690159' },
-              { icon: Mail, href: 'mailto:ali.zahid@example.com', text: 'ali.zahid@example.com' },
-              { icon: Github, href: 'https://github.com/M-Ahsan-Ismail', text: 'GitHub' },
-              { icon: Linkedin, href: 'https://www.linkedin.com/in/ali-zahid/', text: 'LinkedIn' },
+              { icon: Phone, href: 'tel:03391681608', text: '03391681608' },
+              { icon: Mail, href: 'mailto:mohammadalizahid.bss@gmail.com', text: 'mohammadalizahid.bss@gmail.com' },
+              { icon: Github, href: 'https://github.com/M-Ali-01', text: 'GitHub' },
+              { icon: Linkedin, href: 'https://www.linkedin.com/in/mohammad-ali-zahid-%F0%9F%92%8E-649b1b278/', text: 'LinkedIn' },
             ].map(({ icon: Icon, href, text }) => (
               <motion.a
                 key={href}
